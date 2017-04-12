@@ -1,0 +1,278 @@
+.ui-datepicker-trigger {
+       margin-left:5px;
+       margin-top: 1px;
+       margin-bottom: -1px;
+}
+.dropDown{
+	width: 150px;
+}
+.inputText{
+	width: 150px;
+	height: 23px;
+	
+}
+
+
+.tableClass{
+	background-color: #F0F6FF;
+	padding: 4px;
+}
+
+.dataEntryForm{
+	background-color: #F0F6FF;
+	border:solid 5px white;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 4px;
+    background-color: #F0F6FF;
+}
+
+div.scroll {
+ 	width: 1240px;
+ /*    border:solid 5px white;
+    padding-top:100px;
+    border-radius: 25px; */
+   height: 428px;
+   overflow: auto;
+}
+
+.dotline{
+	margin: 10px 0px 10px; 
+	height: 1px;
+	border-style: dotted;"
+}
+.marqueeText{
+	font:18px arial;
+	font-weight:bold;
+}
+
+.linkText{
+	font:18px arial;
+	font-weight:bold;
+}
+
+.required{
+    font-weight: bold;
+}
+.required :after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
+.rowstyle{
+	font:16px arial;
+	font-weight:bold;
+	border-right: blue 1px solid;
+	padding-top:15px;
+	padding-left: 130px;
+	padding-right: 50px;
+	background:  #E9FFDB;
+}
+
+.imgsaveClass { 
+    background-image: url(../images/save.gif);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 23px;
+    border: 0px;
+    background-color: none;
+    cursor: pointer;
+    outline: 0;
+}
+.imgsearchClass { 
+    background-image: url(../images/search.gif);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 23px;
+    border: 0px;
+    background-color: none;
+    cursor: pointer;
+    outline: 0;
+}
+.imgcancelClass { 
+    background-image: url(../images/cancel.gif);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 23px;
+    border: 0px;
+    background-color: none;
+    cursor: pointer;
+    outline: 0;
+}
+.imgcloseClass { 
+    background-image: url(../images/close1.gif);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 23px;
+    border: 0px;
+    background-color: none;
+    cursor: pointer;
+    outline: 0;
+}
+.appheader{
+  		background: white;
+	}
+	.serachcriteria{
+  		background: white;
+	}
+	.serachcriteriasummary{
+  		background: #4997D0;
+  		padding-left:5px;
+  		color: white;
+  		
+	}
+	.directoratenameheader{ 
+  		padding-top: 5px; 
+  		background: #C4D8E2;
+  		
+	}
+	.demographicheader{ 
+  		padding-bottom: 10px; 
+  		background: #DBE9F4;
+  		
+	}
+	.categorynameheader{ 
+  		padding-top: 5px; 
+  		background: #C4D8E2;
+	}
+	.categorytab{  
+  		/* background: #C4D8E2; */
+	}
+	
+.currentRow {
+  background-color: #E7E8EF !important;
+}
+.currentCol {
+  background-color: #E7E8EF !important;
+}
+
+.style-btn{
+			background-color:#9F000F;
+			border: 2px solid;
+			border-radius: 10px;
+			font-family: arial;
+    		font-weight: bold;
+    		font-size: 12pt;
+    		width: 70px;
+    		height: 40px;
+ 		}
+ 		
+.style-grid-btn{
+	background-color:#4AA02C;
+			border: 2px solid;
+			border-radius: 10px;
+			font-family: arial;
+    		font-weight: bold;
+    		font-size: 12pt;
+    		width: 130px;
+    		height: 40px;
+}
+/* Common CSS Below for All Screen Resolution */
+@media screen and (min-width: 500px) {
+			body {
+			width:720px;
+			height:500px;
+			}
+		}
+		@media screen and (min-width: 1050px) {
+			body {
+			width:1680px;
+			height:1200px;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			body {
+			width:1348px;
+			height:900px;
+			}
+		}
+		@media screen and (min-width: 800px) {
+			body {
+			width:1600px;
+			height:900px;
+			}
+		}	
+		@media screen and (min-width: 800px) {
+			body {
+			width:1366px;
+			height:768px;
+			}
+		}
+		
+		#directorateNameHeader, #reportNameHeader{
+			padding-left:10px;
+			font-family: Verdana;
+			font-size: 12px;
+			background:  #A0A0A0;
+			color:white;
+			width:99.3%;
+			margin-top:1px;  
+			margin-bottom:1px;
+			border-bottom:solid 0.1px #2B65EC;
+		}		
+		
+		.searchCriteria{
+			font-size:12px;
+			/* background:#ffffff */
+			background-image: linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -o-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -moz-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -webkit-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -ms-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+		}
+		
+		.reportDropDown{
+			width: 150px;
+			background: #DDFF99;
+		}
+
+		#searchCriteriaTable{
+			background-image: linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -o-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -moz-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -webkit-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -ms-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+		}
+		
+		.zonesMainDiv{
+			margin-top: -570px;
+			width:100%;
+			background:#ffffff;
+			box-shadow: 0 0 1em olive;
+			border-radius:10px;			
+		}
+		
+		.pivotTableStyle{
+			height:440px;
+			width:99%;
+			overflow:auto;
+		/* 	position:absolute; */
+			box-shadow: 0 0 1em olive;
+			border-radius:10px;
+		}
+		
+		.predictiveHeader{
+			 font-size: 14px;
+			 color:black;
+			 padding-top:6px;
+		/* 	background-image: linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -o-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -moz-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -webkit-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%);
+			background-image: -ms-linear-gradient(bottom, #EDFB6E 10%, #85BF32 90%); */
+			 background:#74adb7; 
+			/* background:#b3c6ff; */
+			 width:100%;
+			 height: 25px;
+			 border-top-left-radius: 10px 10px;
+			 border-top-right-radius: 10px 10px;
+		}
+	

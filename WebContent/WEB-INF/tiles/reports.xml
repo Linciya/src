@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="SHDRC.ReportsPage" template="/WEB-INF/jsp/reports/parentlayout.jsp">    
+	    <put-attribute name="header" value="/WEB-INF/jsp/reports/header_static.jsp" />   
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/jsp/reports/footer_static.jsp" />
+	</definition>
+	<definition  name="DMSReportView" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="indicatorZone" extends="SHDRC.ReportsPage">
+	<put-attribute name="body" value="/WEB-INF/jsp/reports/IndicatorZone.jsp" />
+	</definition>
+	<definition  name="analyticsZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/AnalyticsZone.jsp" />
+	</definition>
+	<definition  name="fusion" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/Fusion.jsp" />
+	</definition>
+	<definition  name="treeMap" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/CD.jsp" />
+	</definition>
+	<definition  name="NCD" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/NCD.jsp" />
+	</definition>
+	<definition  name="dmsIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMSIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dmsReportsZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMSReportZone.jsp" />
+	</definition>
+	<definition  name="dmsAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMSAnalysisZone.jsp" />
+	</definition>	
+	<definition  name="dmsFreeHandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMSFreeHandZone.jsp" />
+	</definition>
+	<!-- DPH Report -->
+	<definition  name="dphDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="dphReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DPHReportZone.jsp" />
+	</definition>
+	<definition  name="dphAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DPHAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dphIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DPHIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dphPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DPHPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dphFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DPHFreeHandZone.jsp" />
+	</definition>
+	<!-- TNMSC Report -->
+	<definition  name="tnmscDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCDashboardZone.jsp" />
+	</definition>
+	<definition  name="tnmscReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCReportZone.jsp" />
+	</definition>
+	<definition  name="tnmscAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCAnalysisZone.jsp" />
+	</definition>
+	<definition  name="tnmscIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCIndicatorZone.jsp" />
+	</definition>
+	<definition  name="tnmscPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCPredictiveZone.jsp" />
+	</definition>
+	<definition  name="tnmscFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TNMSCFreeHandZone.jsp" />
+	</definition>
+	<!-- TANSACS Report -->
+	<definition  name="tansacsDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSDashboardZone.jsp" />
+	</definition>
+	<definition  name="tansacsReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSReportZone.jsp" />
+	</definition>
+	<definition  name="tansacsAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSAnalysisZone.jsp" />
+	</definition>
+	<definition  name="tansacsIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSIndicatorZone.jsp" />
+	</definition>
+	<definition  name="tansacsPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSPredictiveZone.jsp" />
+	</definition>
+	<definition  name="tansacsFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/TANSACSFreeHandZone.jsp" />
+	</definition>
+	<!-- NRHM Report -->
+	<definition  name="nrhmDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="nrhmReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NRHMReportZone.jsp" />
+	</definition>
+	<definition  name="nrhmAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NRHMAnalysisZone.jsp" />
+	</definition>
+	<definition  name="nrhmIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NRHMIndicatorZone.jsp" />
+	</definition>
+	<definition  name="nrhmPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NRHMPredictiveZone.jsp" />
+	</definition>
+	<definition  name="nrhmFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NRHMFreeHandZone.jsp" />
+	</definition>
+	<!-- RNTCP Report -->
+	<definition  name="rntcpDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPDashboardZone.jsp" />
+	</definition>
+	<definition  name="rntcpReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPReportZone.jsp" />
+	</definition>
+	<definition  name="rntcpAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPAnalysisZone.jsp" />
+	</definition>
+	<definition  name="rntcpIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPIndicatorZone.jsp" />
+	</definition>
+	<definition  name="rntcpPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPPredictiveZone.jsp" />
+	</definition>
+	<definition  name="rntcpFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/RNTCPFreeHandZone.jsp" />
+	</definition>
+	<!-- MA Report -->
+	<definition  name="maDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MADashboardZone.jsp" />
+	</definition>
+	<definition  name="maReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MAReportZone.jsp" />
+	</definition>
+	<definition  name="maAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MAAnalysisZone.jsp" />
+	</definition>
+	<definition  name="maIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MAIndicatorZone.jsp" />
+	</definition>
+	<definition  name="maPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MAPredictiveZone.jsp" />
+	</definition>
+	<definition  name="maFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MAFreeHandZone.jsp" />
+	</definition>
+	<!-- DME Report -->
+	<definition  name="dmeDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="dmeReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMEReportZone.jsp" />
+	</definition>
+	<definition  name="dmeAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMEAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dmeIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMEIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dmePredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMEPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dmeFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DMEFreeHandZone.jsp" />
+	</definition>
+	<!-- DRMGR Report -->
+	<definition  name="drmgrDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRDashboardZone.jsp" />
+	</definition>
+	<definition  name="drmgrReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRReportZone.jsp" />
+	</definition>
+	<definition  name="drmgrAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRAnalysisZone.jsp" />
+	</definition>
+	<definition  name="drmgrIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRIndicatorZone.jsp" />
+	</definition>
+	<definition  name="drmgrPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRPredictiveZone.jsp" />
+	</definition>
+	<definition  name="drmgrFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DRMGRFreeHandZone.jsp" />
+	</definition>
+	<!-- DFW Report -->
+	<definition  name="dfwDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="dfwReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWReportZone.jsp" />
+	</definition>
+	<definition  name="dfwReportZoneEmployeeReport" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWReportZoneEmployeeReport.jsp" />
+	</definition>
+	<definition  name="dfwAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dfwIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dfwPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dfwFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFWFreeHandZone.jsp" />
+	</definition>
+	<!-- SHTD Report -->
+	<definition  name="shtdDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDDashboardZone.jsp" />
+	</definition>
+	<definition  name="shtdReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDReportZone.jsp" />
+	</definition>
+	<definition  name="shtdAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDAnalysisZone.jsp" />
+	</definition>
+	<definition  name="shtdIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDIndicatorZone.jsp" />
+	</definition>
+	<definition  name="shtdPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDPredictiveZone.jsp" />
+	</definition>
+	<definition  name="shtdFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SHTDFreeHandZone.jsp" />
+	</definition>
+	<!-- COC Report -->
+	<definition  name="cocDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="cocReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/COCReportZone.jsp" />
+	</definition>
+	<definition  name="cocAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/COCAnalysisZone.jsp" />
+	</definition>
+	<definition  name="cocIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/COCIndicatorZone.jsp" />
+	</definition>
+	<definition  name="cocPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/COCPredictiveZone.jsp" />
+	</definition>
+	<definition  name="cocFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/COCFreeHandZone.jsp" />
+	</definition>
+	<!-- SBCS Report -->
+	<definition  name="sbcsDashboardZoneNew" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSDashboardZoneNew.jsp" />
+	</definition>
+	<definition  name="sbcsDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="sbcsReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSReportZone.jsp" />
+	</definition>
+	<definition  name="sbcsAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSAnalysisZone.jsp" />
+	</definition>
+	<definition  name="sbcsIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSIndicatorZone.jsp" />
+	</definition>
+	<definition  name="sbcsPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSPredictiveZone.jsp" />
+	</definition>
+	<definition  name="sbcsFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/SBCSFreeHandZone.jsp" />
+	</definition>
+	<!-- DCA Report -->
+	<definition  name="dcaDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCADashboardZone.jsp" />
+	</definition>
+	<definition  name="dcaReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCAReportZone.jsp" />
+	</definition>
+	<definition  name="dcaAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCAAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dcaIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCAIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dcaPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCAPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dcaFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DCAFreeHandZone.jsp" />
+	</definition>
+	<!-- MRB Report -->
+	<definition  name="mrbDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBDashboardZone.jsp" />
+	</definition>
+	<definition  name="mrbReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBReportZone.jsp" />
+	</definition>
+	<definition  name="mrbAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBAnalysisZone.jsp" />
+	</definition>
+	<definition  name="mrbIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBIndicatorZone.jsp" />
+	</definition>
+	<definition  name="mrbPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBPredictiveZone.jsp" />
+	</definition>
+	<definition  name="mrbFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/MRBFreeHandZone.jsp" />
+	</definition>
+	<!-- DFS Report -->
+	<definition  name="dfsDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="dfsReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFSReportZone.jsp" />
+	</definition>
+	<definition  name="dfsAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFSAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dfsIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFSIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dfsPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFSPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dfsFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DFSFreeHandZone.jsp" />
+	</definition>
+	<!-- CMCHIS Report -->
+	<definition  name="cmchisDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISDashboardZone.jsp" />
+	</definition>
+	<definition  name="cmchisReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISReportZone.jsp" />
+	</definition>
+	<definition  name="cmchisAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISAnalysisZone.jsp" />
+	</definition>
+	<definition  name="cmchisIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISIndicatorZone.jsp" />
+	</definition>
+	<definition  name="cmchisPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISPredictiveZone.jsp" />
+	</definition>
+	<definition  name="cmchisFreeHandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CMCHISFreeHandZone.jsp" />
+	</definition>
+	<!-- DIM Report -->
+	<definition  name="dimDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="dimReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DIMReportZone.jsp" />
+	</definition>
+	<definition  name="dimAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DIMAnalysisZone.jsp" />
+	</definition>
+	<definition  name="dimIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DIMIndicatorZone.jsp" />
+	</definition>
+	<definition  name="dimPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DIMPredictiveZone.jsp" />
+	</definition>
+	<definition  name="dimFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/DIMFreeHandZone.jsp" />
+	</definition>
+	<!-- NLEP Report -->
+	<definition  name="nlepDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPDashboardZone.jsp" />
+	</definition>
+	<definition  name="nlepReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPReportZone.jsp" />
+	</definition>
+	<definition  name="nlepAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPAnalysisZone.jsp" />
+	</definition>
+	<definition  name="nlepIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPIndicatorZone.jsp" />
+	</definition>
+	<definition  name="nlepPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPPredictiveZone.jsp" />
+	</definition>
+	<definition  name="nlepFreehandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPFreeHandZone.jsp" />
+	</definition>
+	<definition  name="NLEPBCPDashBoard" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NLEPBCPDashboard.jsp" />
+	</definition>
+	<!-- ESI Report -->
+	<definition  name="esiDashboardZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/CommonDashboardZone.jsp" />
+	</definition>
+	<definition  name="esiReportZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/ESIReportZone.jsp" />
+	</definition>
+	<definition  name="esiAnalysisZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/ESIAnalysisZone.jsp" />
+	</definition>
+	<definition  name="esiIndicatorZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/ESIIndicatorZone.jsp" />
+	</definition>
+	<definition  name="esiPredictiveZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/ESIPredictiveZone.jsp" />
+	</definition>
+	<definition  name="esiFreeHandZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/ESIFreeHandZone.jsp" />
+	</definition>
+
+	<!-- NCD Report -->
+	<definition  name="ncdReportsZone" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/NCDReportZone.jsp" />
+	</definition>	
+	
+	<!-- User Login Audit -->
+ 	<!-- <definition  name="userAudit" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/UserAuditReport.jsp" />
+	</definition>   -->
+	<!-- <definition  name="108GPSStatusAction" extends="SHDRC.ReportsPage">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108GPSPathTest.jsp" />
+	</definition>  -->
+</tiles-definitions>
+	

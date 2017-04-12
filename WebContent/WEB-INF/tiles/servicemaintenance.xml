@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="SHDRC.ServiceMaintenance" template="/WEB-INF/jsp/dataentry/parentlayout.jsp">    
+	    <put-attribute name="header" value="/WEB-INF/jsp/dataentry/header_static.jsp" />   
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/jsp/dataentry/footer_static.jsp" />
+	</definition>
+
+	<definition  name="directorateMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DirectorateMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="directorateMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DirectorateMasterAdd.jsp" />
+	</definition>
+	<definition  name="directorateMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DirectorateMasterChange.jsp" />
+	</definition>	
+	<definition  name="districtMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DistrictMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="districtMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DistrictMasterAdd.jsp" />
+	</definition>
+	<definition  name="districtMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/DistrictMasterChange.jsp" />
+	</definition>	
+	<definition  name="generalMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/GeneralMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="generalMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/GeneralMasterAdd.jsp" />
+	</definition>
+	<definition  name="generalMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/GeneralMasterChange.jsp" />
+	</definition>	
+	<definition  name="hudMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/HUDMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="hudMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/HUDMasterAdd.jsp" />
+	</definition>
+	<definition  name="hudMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/HUDMasterChange.jsp" />
+	</definition>	
+	<definition  name="indicatorMasterCalculation" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterCalculation.jsp" />
+	</definition>
+	<definition  name="indicatorMasterCalcuChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterCalcuChange.jsp" />
+	</definition>
+	<definition  name="indicatorMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterAdd.jsp" />
+	</definition>	
+	<definition  name="indicatorMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterChange.jsp" />
+	</definition>
+	<definition  name="indicatorMasterDashBoard" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterDashBoard.jsp" />
+	</definition>
+	<definition  name="indicatorMasterDashboardChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterDashboardChange.jsp" />
+	</definition>	
+	<definition  name="indicatorMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="indicatorSummary" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/IndicatorSummary.jsp" />
+	</definition>
+	<definition  name="institutionMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/InstitutionMasterAdd.jsp" />
+	</definition>
+	<definition  name="institutionMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/InstitutionMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="locationMasterAdd" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/LocationMasterAdd.jsp" />
+	</definition>
+	<definition  name="locationMasterChange" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/LocationMasterChange.jsp" />
+	</definition>
+	<definition  name="locationMasterMaintenance" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/LocationMasterMaintenance.jsp" />
+	</definition>
+	<definition  name="menuLinks" extends="SHDRC.ServiceMaintenance">
+		<put-attribute name="body" value="/WEB-INF/jsp/ServiceMaintenance/MenuLinks.jsp" />
+	</definition>
+	
+</tiles-definitions>

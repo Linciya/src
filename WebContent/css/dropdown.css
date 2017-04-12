@@ -1,0 +1,110 @@
+.dropDownMenu{
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 100px;
+  list-style-type: none;
+  position:absolute;
+   z-index:99999;
+   margin-top:-20px;   
+}
+.dropDownMenu a {
+  display: block; 
+  padding: 16px 25px;
+  color: #333;
+  text-decoration: none;
+  background-color: #87CEFA;
+  height:20px;
+  height: 0px;
+  line-height: 0px; 
+  margin-top: 20px; 
+ 
+}
+.dropDownMenu li {
+  position: relative;
+  float: left;
+  margin: 0;
+  border-left: 1px solid #eee;
+   -webkit-perspective: 200;
+  perspective: 200;
+}
+
+.dropDownMenu li:first-child { border-left: none; }
+.dropDownMenu li.parent:before {
+  content: '';
+  z-index: 200;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  margin-top: -4px;
+  margin-left: -40px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 20px 0 20px;
+  border-color: green transparent transparent transparent;
+  -webkit-transition: margin-top .1s ease-out;
+  transition: margin-top .1s ease-out;
+}
+.dropDownMenu li:hover > a,
+.dropDownMenu li:focus > a {
+  text-decoration: none;
+  color: black;  
+  background-color: #32CD32;  
+}
+.dropDownMenu li:hover:before,
+.dropDownMenu li:focus:before {
+  margin-top: 0;
+  height:150px;
+  border-top-color: #A52A2A; 
+ 
+}
+/* 3d View CSS  Starts*/
+
+
+
+.dropDownMenu li:hover .children,
+.dropDownMenu li:focus .children {
+  opacity: 1;  
+  -webkit-transform: rotateX(0) translateZ(0);
+  transform: rotateX(0) translateZ(0);
+  padding:0px;
+}
+
+.dropDownMenu .children {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.17, 0.67, 0.59, 1.21), opacity 0.1s 0.1s;
+  transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.59, 1.21), opacity 0.1s 0.1s;
+  z-index: 100;
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  margin: 0;
+  padding: 10px 0;
+  background-color:white; 
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+   margin-left: -40px;
+}
+.dropDownMenu .children li { float: none; }
+.dropDownMenu .children a { background-color: transparent; }
+.dropDownMenu .children a:hover,
+.dropDownMenu .children a:focus {
+  color: white; 
+  background-color: green;
+ /*  width:144.6px; */
+}
+
+
+

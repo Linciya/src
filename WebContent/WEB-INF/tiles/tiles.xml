@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition  name="login" template="Login.jsp"/>		
+	<definition name="SHDRC.HomePage" template="/WEB-INF/jsp/home/parentlayout.jsp">    
+	    <put-attribute name="header" value="/WEB-INF/jsp/home/header_static.jsp" />   
+	    <put-attribute name="body" value="/WEB-INF/jsp/home/body_shdrc_static.jsp" />
+	    <put-attribute name="footer" value="/WEB-INF/jsp/home/footer_static.jsp" />
+	</definition>
+	<definition  name="error" extends="SHDRC.HomePage">
+		<put-attribute name="body" value="/WEB-INF/jsp/error/Error.jsp" />
+	</definition> 
+	<definition name="SHDRC.DataEntry" template="/WEB-INF/jsp/dataentry/parentlayout.jsp">    
+	    <put-attribute name="header" value="/WEB-INF/jsp/dataentry/header_static.jsp" />   
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/jsp/dataentry/footer_static.jsp" />
+	</definition>
+	<definition  name="sdgsDashboard" extends="SHDRC.HomePage"/>
+	<definition  name="hsDashboard" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/HSDashboard.jsp" />
+	</definition>
+	<definition  name="hsDashboardAllDirstictData" template="/WEB-INF/jsp/hs/HSDistrictData.jsp"/>
+	<definition  name="hsHomePage" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/HSHomepage.jsp" />
+	</definition>
+	<definition  name="fusion" extends="SHDRC.HomePage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/Fusion.jsp" />
+	</definition> 
+	<definition  name="treeMap" extends="SHDRC.HomePage">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/CD.jsp" />
+	</definition>
+	
+		<!-- PREDICTIVE ZONE -->
+	<definition  name="imrPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/IMRPredictiveZone.jsp" />
+	</definition>
+	<definition  name="imrClusteringPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/IMRClusteringPredictiveZone.jsp" />
+	</definition>
+	<definition  name="diseaseOutbreakPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/DiseaseOutbreakPredictiveZone.jsp" />
+	</definition>
+	<definition  name="cmchisServicePredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/CMCHISServicePredictiveZone.jsp" />
+	</definition>
+	<definition  name="cmchisProcedurePredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/CMCHISProcedurePredictiveZone.jsp" />
+	</definition>
+	<definition  name="cmchisDeniedPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/CMCHISDeniedPredictiveZone.jsp" />
+	</definition>
+	<definition  name="cmchisNMIPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/CMCHISNMIPredictiveZone.jsp" />
+	</definition>
+	<definition  name="fullyImmunizedPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/FullyImmunizedPredictiveZone.jsp" />
+	</definition>
+	<definition  name="measlesPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/MeaslesPredictiveZone.jsp" />
+	</definition>
+	<definition  name="bloodBankStockPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/BloodBankStockPredictiveZone.jsp" />
+	</definition>
+	<definition  name="bloodBankStockInstitutionWisePredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/BloodBankStockInstitutionWisePredictiveZone.jsp" />
+	</definition>
+	<definition  name="hobParaPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/HOBParaPredictiveZone.jsp" />
+	</definition>
+	<definition  name="hsDashboardPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/HSDashboardPredictiveZone.jsp" />
+	</definition>
+	<definition  name="mmrInsidesPredictiveZone" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/MMRInsides.jsp" />
+	</definition>
+	<definition  name="mmrOperationalAnalytics" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/PredictiveZone/MMROperationalAnalytics.jsp" />
+	</definition>
+	
+	
+	<!-- <definition  name="fusion" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/Fusion.jsp" />
+	</definition> -->
+	<definition  name="treeMap" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/TreeMap.jsp" />
+	</definition>
+	<definition  name="reframe" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/hs/reframe.jsp" />
+	</definition>	
+	
+	<!-- Data Entry -->
+	<definition  name="dmsDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DMSDirectorate.jsp" />
+	</definition>
+	<definition  name="dphDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DPHDirectorate.jsp" />
+	</definition>
+	<definition  name="tnmscDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/TNMSCDirectorate.jsp" />
+	</definition>
+	<definition  name="tansacsDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/TANSACSDirectorate.jsp" />
+	</definition>
+	<definition  name="nrhmDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/NRHMDirectorate.jsp" />
+	</definition>
+	<definition  name="rntcpDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/RNTCPDirectorate.jsp" />
+	</definition>
+	<definition  name="maDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/MADirectorate.jsp" />
+	</definition>
+	<definition  name="dmeDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DMEDirectorate.jsp" />
+	</definition>
+	<definition  name="drmgrDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DRMGRDirectorate.jsp" />
+	</definition>
+		<definition  name="shtdDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/SHTODirectorate.jsp" />
+	</definition>
+		<definition  name="cocDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/COCDirectorate.jsp" />
+	</definition>
+	<definition  name="sbcsDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/SBCSDirectorate.jsp" />
+	</definition>
+	<definition  name="dcaDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DCADirectorate.jsp" />
+	</definition>
+	<definition  name="dfwDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWDirectorate.jsp" />
+	</definition>
+	<definition  name="dfwEmpDetails" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWEmployeeDetails.jsp" />
+	</definition>
+	<definition  name="dfwEmpDetailsAdd" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWEmployeeForm.jsp" />
+	</definition>
+	<definition  name="dfwEmpDetailsChange" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWChangeEmployeeForm.jsp" />
+	</definition>
+	<definition  name="dfwEmpDetailsTransfer" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWEmployeeTransfer.jsp" />
+	</definition>
+	<definition  name="dfwEmployeeTransferList" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWEmployeeTransferDetails.jsp" />
+	</definition>
+	<definition  name="dfwEmpTransferAccept" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFWEmployeeTransferAccept.jsp" />
+	</definition>
+	<definition  name="mrbDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/MRBDirectorate.jsp" />
+	</definition>
+	<definition  name="dfsDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DFSDirectorate.jsp" />
+	</definition>
+	<definition  name="cmchisDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/CMCHISDirectorate.jsp" />
+	</definition>
+	<definition  name="dimDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/DIMDirectorate.jsp" />
+	</definition>
+	<definition  name="nlepDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/NLEPDirectorate.jsp" />
+	</definition>
+	<definition  name="esiDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/ESIDirectorate.jsp" />
+	</definition>
+	<definition  name="privateSectorDataentry" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/PrivateSector.jsp" />
+	</definition>
+	
+	<!-- Modify User -->
+	<definition  name="changeUserDetails" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/ModifyUserDetails.jsp" />
+	</definition>
+	
+	<!-- Change Password -->
+	<definition  name="changePwd" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/ChangePassword.jsp" />
+	</definition>
+	
+	<!-- News -->
+	<definition  name="fetchNews" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/News.jsp" />
+	</definition>
+	
+	<!-- News/Notification -->
+	<definition  name="msgAlert" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/MessageAlert.jsp" />
+	</definition>
+	
+	<!-- Statistics -->
+	<definition  name="indStatistics" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/Statistics.jsp" />
+	</definition>
+	
+	<!--Upload Excel -->
+	<definition  name="fileUpload" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/UploadExcel.jsp" />
+	</definition>
+	
+	<definition  name="tnmscFileUpload" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/UploadTNMSCExcel.jsp" />
+	</definition>
+	
+	<!--Documentation -->
+	<definition  name="trainingMaterial" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/TrainingMaterial.jsp" />
+	</definition>
+	
+	<!-- User Login Audit -->
+	<definition  name="userAudit" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/UserAuditReport.jsp" />
+	</definition>  
+	
+	<definition  name="shdrcSliderAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/shdrcMMRSlider.jsp" />
+	</definition>
+	
+	 <definition  name="shdrcPredictionSliderAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/shdrcIMRSlider.jsp" />
+	</definition>
+	
+	<!-- 108 Ambulance Report -->
+	<definition  name="AmbulanceReport" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/AmbulanceReport.jsp" />
+	</definition>
+	
+	<definition  name="AmbulanceCaseReport" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/AmbulanceCaseReport.jsp" />
+	</definition>
+	
+	<definition  name="AmbulancePredictionReport" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/AmbulancePrediction.jsp" />
+	</definition>
+	
+	<definition  name="108HomePageAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108HomePage.jsp" />
+	</definition>	
+	
+	<definition  name="108TotalCaseAvailed" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108TotalCaseAvailedNew.jsp" />
+	</definition>
+	
+	<definition  name="108TotalTripsAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108TotalTrips.jsp" />
+	</definition>	
+	
+	<definition  name="cycleTimeAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108CycleTime.jsp" />
+	</definition>
+	
+	 <definition  name="108GPSStatusAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108GPSStatus.jsp" />
+	</definition>  
+	
+	<definition  name="108GPSStatusAction" template="/WEB-INF/jsp/reports/108GPSStatus.jsp">
+	</definition> 
+	
+	<definition  name="108EmergencyTypeReport" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108EmergencyType.jsp" />
+	</definition>	
+	
+	<definition  name="kilometersCoveredAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/reports/108KilometersCovered.jsp" />
+	</definition>
+	
+	<definition  name="108FileUpload" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/dataentry/108UploadExcel.jsp" />
+	</definition> 
+	
+	<definition  name="userManagementCheckAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/UserManagement.jsp" />
+	</definition>
+	<definition  name="editUserManagementCheckAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/EditUserManagement.jsp" />
+	</definition>
+	<definition  name="editUserManagementCheckActionOnLoad" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/EditUserManagement.jsp" />
+	</definition>
+	<definition  name="updateUserManagementDetailsAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/UpdateUserManagement.jsp" />
+	</definition>
+	<definition  name="changePwdUserManagementDetailsAction" extends="SHDRC.DataEntry">
+		<put-attribute name="body" value="/WEB-INF/jsp/home/ChangePasswordUserManagement.jsp" />
+	</definition>
+	<!-- <definition  name="108LiveGPSStatusAction" template="/WEB-INF/jsp/reports/108LiveGPSStatus.jsp">
+	</definition> --> 
+</tiles-definitions>

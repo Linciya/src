@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans	xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:pen="http://www.pentaho.com/schema/pentaho-system"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.pentaho.com/schema/pentaho-system 
+		http://www.pentaho.com/schema/pentaho-system.xsd">
+  
+    <!-- Scheduler bean for the trigger-->
+  	<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+  		<property name="triggers">
+  			<list>
+  				<!-- <ref local="smsAlertTrigger"/> -->
+  				<ref local="cmchisWebserviceTrigger"/>
+  			</list>
+  		</property>
+  	</bean>
+  	
+  	<!-- SMS Alert start -->
+   	<bean id="cmchisWebserviceTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+  		<property name="cronExpression">
+  			<!-- <value>0/300 * * * * ?</value> -->
+  			<!-- <value>0 0 5 * * ?</value> -->
+  			<value>0 0 5 * * ?</value>
+  		</property>
+  		<property name="jobDetail">
+  			<ref bean="cmchisWebserviceCronJob"/>
+  		</property>
+  	</bean>
+  	<bean name="cmchisWebserviceCronJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean" >
+        <property name="jobClass" value="gov.shdrc.scheduler.webservice.CMCHISWebserviceCronJob"/>
+    </bean>
+  	
+   <!-- SMS Alert start -->
+   	<bean id="smsAlertTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+  		<property name="cronExpression">
+  			<value>0 53 15 * * ?</value>
+  		</property>
+  		<property name="jobDetail">
+  			<ref bean="smsAlertCronJob"/>
+  		</property>
+  	</bean>
+  	<bean name="smsAlertCronJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean" >
+        <property name="jobClass" value="gov.shdrc.sms.SmsAlertCronJob"/>
+    </bean>
+   <!--  <bean name="smsAlert" class="gov.shdrc.sms.SmsAlert" >
+        <property name="directorateName" value="DMS"/>
+         <property name="districtName" value="Chennai"/>
+    </bean> -->
+</beans>
+
